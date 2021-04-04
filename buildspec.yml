@@ -38,7 +38,8 @@ phases:
       # - command
   post_build:
     commands:
-      - cp target/ebs-0.0.1-SNAPSHOT.jar ebs-0.0.1-SNAPSHOT.jar
+      # - cp target/ebs-0.0.1-SNAPSHOT.jar ebs-0.0.1-SNAPSHOT.jar
+      - echo "post build"
       # - command
       #reports:
       #report-name-or-arn:
@@ -50,9 +51,9 @@ phases:
     #file-format: JunitXml | CucumberJson
 artifacts:
   files:
-    - ebs-0.0.1-SNAPSHOT.jar
-
+    - target/ebs-0.0.1-SNAPSHOT.jar
   name: ebs-$(date +%Y%m%d-%H%M%S)
+  discard-paths: yes
     #name: $(date +%Y-%m-%d)
     #discard-paths: yes
     #base-directory: location
