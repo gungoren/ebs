@@ -8,6 +8,6 @@ public class MainController {
 
     @GetMapping("/welcome")
     public String welcomePage(){
-        return "Welcome to my web app!. This is new version of app";
+        return "Welcome to my web app!";
     }
 }
