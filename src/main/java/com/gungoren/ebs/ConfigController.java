@@ -15,6 +15,6 @@ public class ConfigController {
 
     @GetMapping("/properties")
     public String getProperties(){
-        return String.format("%s-%s", dataSourceUrl, dataSourceName);
+        return String.format("v3 -> %s %s", dataSourceUrl, dataSourceName);
     }
 }
